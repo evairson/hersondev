@@ -1,0 +1,25 @@
+@import '../styles/variables.css';
+
+#card {
+    position: relative;
+    left : 0;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: var(--primary-color);
+    color: black;
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    font-size: 0.6rem;
+    width: 25vw;
+    text-align: center;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: left 0.5s ease;
+}
+
+
+#card:hover {
+    left: 5vw;
+    background-color: var(--primary-color);
+    color: black;
+}
