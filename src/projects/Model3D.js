@@ -30,6 +30,15 @@ function Model3D() {
             </iframe>
         </div>
 
+        <div className="sketchfab-embed-wrapper">
+            <iframe 
+                title="Mcgonagal" 
+                frameBorder="0"
+                allowFullScreen 
+                src="https://sketchfab.com/models/4075bcda50044c2c9bf6648bb7935529/embed?autostart=1&quality=hd">
+            </iframe>
+        </div>
+
         </div>
             
         </div>

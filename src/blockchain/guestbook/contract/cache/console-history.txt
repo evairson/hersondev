@@ -1,0 +1,5 @@
+console.log(await Guestbook.leaveMessage("Coucou !"));
+console.log(await Guestbook.getMessages());
+Guestbook = await ethers.getContractAt("Guestbook", "0xF1c4f7CC01F9030d090F8F671063F19BEeE20B74");
+const Guestbook = await ethers.getContractAt("Guestbook", "0xF1c4f7CC01F9030d090F8F671063F19BEeE20B74");
+const Guestbook = await ethers.getContractAt("Guestbook", "0xF1c4f7CC01F9030d090F8F671063F19BEeE20B74")

@@ -1,10 +1,11 @@
 @import './styles/variables.css';
 
-.App {
+body {
     background-image: url("../public/ressources/background.png");
     background-size: 100% 100%;
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     background-color: black;
     padding-bottom: 20vh;
 }
@@ -17,7 +18,7 @@ color {
 h1 {
     margin: 0;
     padding: 3px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .container {
@@ -30,7 +31,7 @@ h1 {
 .content_text {
     margin-right: 5vw;
     margin-left : 3vw;
-    margin-top : 10vh;
+    margin-top : 5vh;
     
 }
 
@@ -57,9 +58,8 @@ h1 {
 
 .content_text p {
     margin-left: 2vw;
-    font-size: 0.8rem ;
+    font-size: 1.3rem;
     font-weight: 300;
-    line-height: 1.2rem;
     
 }
 
@@ -81,20 +81,20 @@ h1 {
     display: flex;
     margin-left: 5vw;
     margin-top: 8vh;
+    gap: 2.5rem; /* Espace entre les boutons */
+    align-items: start;
 }
 
 .button_fill {
     background-color: var(--primary-color);
     color: black;
-    padding: 10px 10px;
-    border: none;
+    padding: 1rem 1rem;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.5s ease;
     text-decoration: none;
-    font-size: 0.6rem;
     border: 1px solid var(--primary-color);
-    height: 2vh;
+    font-size: 1.3rem;
 }
 
 .button_fill:hover {
@@ -102,23 +102,18 @@ h1 {
     color: var(--primary-color);
 }
 
-.content_text__buttons .see_my_work {
-    margin-right: 3vw;
-    margin-top: 1vh;
-}
-
 
 
 .button_outline {
     color: var(--primary-color);
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.5s ease;
     text-decoration: none;
-    font-size: 0.6rem;
-    height: 2vh;
+    font-size: 1.3rem;
+    
 }
 
 .button_outline:hover {
@@ -128,7 +123,8 @@ h1 {
 
 .content_text__img {
     width: 5vw;
-    margin: 5vh 25px;
+    margin: auto;
+    margin-top: 4vh;
     overflow: hidden;
 }
 
@@ -137,6 +133,10 @@ h1 {
     top: -80px;
     width: 100%;
     transition: top 0.5s ease;
+}
+
+.see_my_work {
+    align-items: center;
 }
 
 .content_text__buttons .button_outline:hover ~ .content_text__img img {

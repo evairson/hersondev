@@ -1,13 +1,14 @@
 import './Project.css';
 
-function Project({title, img, firstText, secondText, link}) {
+function Project({title, img, firstText, secondText, link, phone}) {
     const style = {
         backgroundImage: `url(ressources/projects/${img}.png)`,
         backgroundSize: 'cover',
+        
     }
 
   return (
-    <a className="project" style={style} href={link} target="_blank">
+    <a className={`project ${phone ? 'phone' : ''}`} href={link} style={style} target="_blank" rel="noreferrer">
         
       <h1>{title}</h1>
       <div className='overlay'>

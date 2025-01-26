@@ -6,4 +6,7 @@ export const Pages = {
     PROJECTS: '/projects',
     MODEL3D: '/model3d',
     GAME: '/game',
+    APP: '/app',
+    WEBSITE: '/website',
+    GUESTBOOK: '/guestbook'
 }

@@ -2,6 +2,7 @@ import { Pages } from "./constants";
 import Header from "./header/Header";
 import Card from "./widget/Card";
 import './App.css';
+import { Link as ScrollLink, Element } from "react-scroll";
 
 
 function Home() {
@@ -17,15 +18,18 @@ function Home() {
             <p>I develop your projects, whether it's mobile apps, websites, automation, or custom scripts.</p> 
             <div className="content_text__buttons">
               <div className='see_my_work'>
-               <a href="#projects" className='button_outline'>SEE MY WORK</a> 
+               <ScrollLink to="projects" className='button_outline' smooth={true}
+                duration={500}>SEE MY WORK</ScrollLink> 
                
                <div className='content_text__img'>
                <img src="ressources/arrow_down.png" alt="" />
                </div>
               </div>
               
-              
-              <a href="/" className='button_fill'>CONTACT ME FOR A QUOTE</a>
+              <div>
+              <a href="mailto:eva.herson.pro@gmail.com"
+               className='button_fill'>CONTACT ME</a>
+               </div>
             </div>
             
           </div>
@@ -39,20 +43,20 @@ function Home() {
         <div className="container me">
 
         
-        <div id='projects'>
+        <Element id='projects' name="projects">
         <h1>My Projects</h1>
 
 
         <div className="card_container">
           <Card title="Game" link={Pages.GAME}/>
-          <Card title="Mobile App" />
-          <Card title="Web Site | Blockchain" />
+          <Card title="Mobile App" link={Pages.APP}/>
+          <Card title="Web Site | Blockchain" link={Pages.WEBSITE}/>
           <Card title="Custom Scripts"/>
           <Card title="3D Model" link={Pages.MODEL3D}/>
           
           
         </div>
-        </div>
+        </Element>
 
         <div id='projects'>
 
