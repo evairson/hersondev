@@ -2,7 +2,7 @@ import './Header.css';
 import { Pages } from '../constants';
 
 
-function Header({activeIndex}) {
+const Header = ({activeIndex}) => {
   return (
     <header>
       <div className="container">

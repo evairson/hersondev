@@ -29,3 +29,9 @@
     background-color: var(--primary-color);
     color: black;
 }
+
+#card.stop:hover {
+    left: 0;
+    background-color: var(--primary-color);
+    color: black;
+}

@@ -8,5 +8,5 @@ export const Pages = {
     GAME: '/game',
     APP: '/app',
     WEBSITE: '/website',
-    GUESTBOOK: '/guestbook'
+    GUESTBOOK: '/guestbook',
 }

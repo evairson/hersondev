@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Card.css';
 
-function Card({ title, link, reverse }) {
+const Card = ({ title, link, reverse, stop}) => {
 
   return (
-    <Link to={link} id='card' className={`${reverse ? "reverse" : ""}`}>
+    <Link to={link} id='card' className={`${reverse ? "reverse" : ""} ${stop ? "stop" : ""}`}>
       <h2>{title}</h2>
       </Link>
   );

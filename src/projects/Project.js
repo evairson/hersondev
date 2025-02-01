@@ -1,6 +1,6 @@
 import './Project.css';
 
-function Project({title, img, firstText, secondText, link, phone}) {
+const Project = ({title, img, firstText, secondText, link, phone}) => { 
     const style = {
         backgroundImage: `url(ressources/projects/${img}.png)`,
         backgroundSize: 'cover',

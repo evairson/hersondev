@@ -3,7 +3,7 @@ import Header from "../header/Header";
 import Project from "./Project";
 import './Project.css';
 
-function WebSite() {
+const WebSite = () => {
   return (
     <div className="App projects">
         <Header activeIndex={Pages.PROJECTS}/> 

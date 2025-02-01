@@ -2,7 +2,7 @@ import { Pages } from "../constants";
 import Header from "../header/Header";
 import './Project.css';
 
-function Model3D() {
+const Model3D = () => {
 
     return (
         <div className="App projects">

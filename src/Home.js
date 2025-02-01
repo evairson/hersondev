@@ -1,11 +1,11 @@
 import { Pages } from "./constants";
 import Header from "./header/Header";
 import Card from "./widget/Card";
-import './App.css';
+import './styles/App.css';
 import { Link as ScrollLink, Element } from "react-scroll";
 
 
-function Home() {
+const Home = () => {
   return (
     <div className="App">
     <Header activeIndex={Pages.HOME}/> 
@@ -63,12 +63,11 @@ function Home() {
         <h1>My Skills</h1>
 
         <div className="card_container">
-          <Card title="Game" link={Pages.GAME} reverse={true}/>
-          <Card title="Mobile App" reverse={true}/>
-          <Card title="Web Site | Blockchain" reverse={true} />
-          <Card title="Custom Scripts" reverse={true}/>
-          <Card title="Other skills" reverse={true}/>
-          
+          <Card title="Game" link={`${Pages.COMPETENCES}#other`} reverse={true}/>
+          <Card title="Mobile App" link={`${Pages.COMPETENCES}#mobile`} reverse={true}/>
+          <Card title="Web Site" link={`${Pages.COMPETENCES}#web`} reverse={true} />
+          <Card title="Blockchain" link={`${Pages.COMPETENCES}#blockchain`} reverse={true}/>
+          <Card title="Other skills" link={`${Pages.COMPETENCES}#other`} reverse={true}/>
           
         </div>
         </div>
