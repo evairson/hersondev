@@ -41,7 +41,7 @@ jobs:
         name: node-app
 
     - name: Deploy via FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.5.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.cluster100.hosting.ovh.net
         username: ${{ secrets.FTP_USERNAME }} 
