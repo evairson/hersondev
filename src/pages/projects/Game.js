@@ -1,7 +1,7 @@
-import { Pages } from "../constants";
-import Header from "../header/Header";
-import Project from "./Project";
-import './Project.css';
+import { Pages } from "../../constants/constants";
+import Header from "../../components/header/Header";
+import Project from "../../components/project/Project";
+import '../../components/project/Project.css';
 
 const Game = () => {
   return (

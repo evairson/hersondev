@@ -1,16 +1,17 @@
 import './styles/App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Pages } from './constants';
-import Home from './Home';
-import Model3D from './projects/Model3D';
-import Game from './projects/Game';
-import AppProject from './projects/AppProject';
-import ScrollToTop from './widget/ScrollTop';
-import WebSite from './projects/WebSite';
-import Project from './Project';
-import GuestBook from './blockchain/guestbook/GuestBook';
-import About from './About';
-import Competences from './Competences';
+import { Pages } from './constants/constants';
+import Home from './pages/Home';
+import Model3D from './pages/projects/Model3D';
+import Game from './pages/projects/Game';
+import AppProject from './pages/projects/AppProject';
+import ScrollToTop from './components/ScrollTop';
+import WebSite from './pages/projects/WebSite';
+import Project from './pages/Project';
+import GuestBook from './pages/blockchain/guestbook/GuestBook';
+import About from './pages/About';
+import Competences from './pages/Competences';
+import Script from './pages/projects/Script';
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path={Pages.GUESTBOOK} element={<GuestBook />} />
         <Route path={Pages.ABOUT} element={<About />} />
         <Route path={Pages.COMPETENCES} element={<Competences />} />
+        <Route path={Pages.SCRIPTS} element={<Script />} />
       </Routes>
     </Router>
   );

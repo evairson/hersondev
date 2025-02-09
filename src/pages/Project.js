@@ -1,6 +1,6 @@
-import { Pages } from "./constants";
-import Header from "./header/Header";
-import Card from "./widget/Card";
+import { Pages } from "../constants/constants";
+import Header from "../components/header/Header";
+import Card from "../components/card/Card";
 
 
 const Project = () => {
@@ -15,6 +15,7 @@ const Project = () => {
       <Card title="Game" link={Pages.GAME} stop={true}/>
       <Card title="Mobile App" link={Pages.APP} stop={true}/>
       <Card title="Web Site | Blockchain" link={Pages.WEBSITE} stop={true}/>
+      <Card title="Scripts" link={Pages.SCRIPTS} stop={true}/>
       <Card title="3D Model" link={Pages.MODEL3D} stop={true}/>
       
       

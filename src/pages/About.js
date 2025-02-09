@@ -1,6 +1,6 @@
-import { Pages } from "./constants";
-import Header from "./header/Header";
-import AboutInfo from "./widget/AboutInfo";
+import { Pages } from "../constants/constants";
+import Header from "../components/header/Header";
+import AboutInfo from "../components/AboutInfo";
 
 const About = () => {
   return (

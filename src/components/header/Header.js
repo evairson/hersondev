@@ -1,5 +1,5 @@
 import './Header.css';
-import { Pages } from '../constants';
+import { Pages } from '../../constants/constants';
 
 
 const Header = ({activeIndex}) => {

@@ -1,6 +1,6 @@
-import CompetencesInfo from "./widget/CompetencesInfo";
-import Header from "./header/Header";
-import { Pages } from "./constants";
+import CompetencesInfo from "../components/CompetencesInfo";
+import Header from "../components/header/Header";
+import { Pages } from "../constants/constants";
 
 const Competences = () => {
     return (

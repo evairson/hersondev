@@ -1,7 +1,7 @@
-import { Pages } from "./constants";
-import Header from "./header/Header";
-import Card from "./widget/Card";
-import './styles/App.css';
+import { Pages } from "../constants/constants";
+import Header from "../components/header/Header";
+import Card from "../components/card/Card";
+import '../styles/App.css';
 import { Link as ScrollLink, Element } from "react-scroll";
 
 
@@ -15,7 +15,7 @@ const Home = () => {
             <div className='flex'> <h1 className='first_text'> Hi ! </h1> <div className='overflow_hidden'><h1 className='last_text'>My name is Eva</h1></div> </div>
             <div className='overflow_hidden'><h1 className='slide_top'>I’m a <color> Full Stack Developer </color> </h1></div> 
 
-            <p>I develop your projects, whether it's mobile apps, websites, automation, or custom scripts.</p> 
+            <p>Welcome to my portfolio website! Here you can find my projects and my skills. </p>
             <div className="content_text__buttons">
               <div className='see_my_work'>
                <ScrollLink to="projects" className='button_outline' smooth={true}
@@ -51,6 +51,7 @@ const Home = () => {
           <Card title="Game" link={Pages.GAME}/>
           <Card title="Mobile App" link={Pages.APP}/>
           <Card title="Web Site | Blockchain" link={Pages.WEBSITE}/>
+          <Card title="Scripts" link={Pages.SCRIPTS}/>
           <Card title="3D Model" link={Pages.MODEL3D}/>
           
           
@@ -62,6 +63,7 @@ const Home = () => {
         <h1>My Skills</h1>
 
         <div className="card_container">
+          <Card title="Game" link={`${Pages.COMPETENCES}#other`} reverse={true}/>
           <Card title="Mobile App" link={`${Pages.COMPETENCES}#mobile`} reverse={true}/>
           <Card title="Web Site" link={`${Pages.COMPETENCES}#web`} reverse={true} />
           <Card title="Blockchain" link={`${Pages.COMPETENCES}#blockchain`} reverse={true}/>
