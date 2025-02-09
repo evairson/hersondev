@@ -51,7 +51,6 @@ const Home = () => {
           <Card title="Game" link={Pages.GAME}/>
           <Card title="Mobile App" link={Pages.APP}/>
           <Card title="Web Site | Blockchain" link={Pages.WEBSITE}/>
-          <Card title="Custom Scripts"/>
           <Card title="3D Model" link={Pages.MODEL3D}/>
           
           
@@ -63,7 +62,6 @@ const Home = () => {
         <h1>My Skills</h1>
 
         <div className="card_container">
-          <Card title="Game" link={`${Pages.COMPETENCES}#other`} reverse={true}/>
           <Card title="Mobile App" link={`${Pages.COMPETENCES}#mobile`} reverse={true}/>
           <Card title="Web Site" link={`${Pages.COMPETENCES}#web`} reverse={true} />
           <Card title="Blockchain" link={`${Pages.COMPETENCES}#blockchain`} reverse={true}/>

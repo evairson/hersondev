@@ -30,7 +30,8 @@ const Competences = () => {
             <p> AI : Tensorflow, Keras </p>
             <p> Game : Construct, Unity, Java </p>
             <p> Robotique : Arduino, micro:bit </p>
-            <p> 3D : Nomad Sculpt </p>
+            <p> Other : Bot Discord Python </p>
+            <p> 3D : Nomad Sculpt </p> 
         </CompetencesInfo>
 
         </div>
