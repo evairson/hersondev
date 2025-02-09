@@ -12,8 +12,48 @@ import GuestBook from './pages/blockchain/guestbook/GuestBook';
 import About from './pages/About';
 import Competences from './pages/Competences';
 import Script from './pages/projects/Script';
+import { useEffect, useState } from 'react';
 
 const App = () => {
+  const [isMobile, setIsMobile] =  useState(false);
+
+  useEffect(() => {
+
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); 
+    };
+
+
+    checkMobile();
+
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
+
+  if (isMobile) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          textAlign: "center",
+          backgroundColor: "#f8f9fa",
+          color: "#333",
+        }}
+      >
+        <h1>
+          Site web sur mobile en construction. <br />
+          Veuillez visualiser le site sur un ordinateur.
+        </h1>
+      </div>
+    );
+  }
 
   return (
     <Router>
