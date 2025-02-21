@@ -7,10 +7,6 @@ const Header = ({activeIndex}) => {
     <header>
       <div className="container">
 
-      <a href={Pages.HOME} className="logo">
-        <img id="header_img" src="ressources/avatar_eva.png" alt="" />
-      </a>
-
         <nav>
           <ul>
             <li className={activeIndex === Pages.HOME ? "active" : ""} id="home"><a href={Pages.HOME} >Home</a></li>
