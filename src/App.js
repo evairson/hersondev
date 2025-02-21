@@ -24,7 +24,7 @@ const App = () => {
     };
 
 
-    checkMobile();
+    //checkMobile();
 
 
     window.addEventListener("resize", checkMobile);
