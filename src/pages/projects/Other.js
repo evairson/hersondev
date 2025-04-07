@@ -29,8 +29,14 @@ const Script = () => {
             firstText="This is a script with challenges to discover Discord bots with Python."
             secondText="Click here to see the code"
             link={"https://colab.research.google.com/drive/1cKiVvmQZbBzKWdrrQNiKZRQcWlPF_dLn?usp=sharing"}
-            
         />
+
+        <Project title="Shell" img="shell"
+            firstText="This is a school project where we had to create a simple shell in C."
+            secondText="The git repository will be available soon. "
+            link="/"
+        />
+
         </div>
 
     </div>

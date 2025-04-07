@@ -11,7 +11,7 @@ import Project from './pages/Project';
 import GuestBook from './pages/blockchain/guestbook/GuestBook';
 import About from './pages/About';
 import Competences from './pages/Competences';
-import Script from './pages/projects/Script';
+import Script from './pages/projects/Other';
 import { useEffect, useState } from 'react';
 
 const App = () => {

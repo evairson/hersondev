@@ -42,6 +42,12 @@ const WebSite = () => {
           link='/guestbook'
         />
 
+        <Project title = "Greenlock (blockchain)" img="greenlock"
+          firstText="Our team Greelock made a project that transforms land conservation by tokenizing Environmental protections as NFTs. We won the third price in the XRPL track at the Paris Blockchain Week Hackathon 2025."
+          secondText="Click here to see a demo"
+          link='https://youtu.be/e0_1su9Vn3c'
+        />
+
 
         </div>
 

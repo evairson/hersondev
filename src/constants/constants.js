@@ -9,5 +9,5 @@ export const Pages = {
     APP: '/app',
     WEBSITE: '/website',
     GUESTBOOK: '/guestbook',
-    SCRIPTS : '/scripts'
+    OTHER: '/other',
 }

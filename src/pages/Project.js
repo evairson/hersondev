@@ -15,7 +15,7 @@ const Project = () => {
       <Card title="Game" link={Pages.GAME} stop={true}/>
       <Card title="Mobile App" link={Pages.APP} stop={true}/>
       <Card title="Web Site | Blockchain" link={Pages.WEBSITE} stop={true}/>
-      <Card title="Scripts" link={Pages.SCRIPTS} stop={true}/>
+      <Card title="Other" link={Pages.OTHER} stop={true}/>
       <Card title="3D Model" link={Pages.MODEL3D} stop={true}/>
       
       
