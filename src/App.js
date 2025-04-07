@@ -12,7 +12,6 @@ import GuestBook from './pages/blockchain/guestbook/GuestBook';
 import About from './pages/About';
 import Competences from './pages/Competences';
 import Script from './pages/projects/Other';
-import { useEffect, useState } from 'react';
 
 const App = () => {
   /*const [isMobile, setIsMobile] =  useState(false);
@@ -68,7 +67,7 @@ const App = () => {
         <Route path={Pages.GUESTBOOK} element={<GuestBook />} />
         <Route path={Pages.ABOUT} element={<About />} />
         <Route path={Pages.COMPETENCES} element={<Competences />} />
-        <Route path={Pages.SCRIPTS} element={<Script />} />
+        <Route path={Pages.OTHER} element={<Script />} />
       </Routes>
     </Router>
   );

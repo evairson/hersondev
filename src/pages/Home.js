@@ -51,7 +51,7 @@ const Home = () => {
           <Card title="Game" link={Pages.GAME}/>
           <Card title="Mobile App" link={Pages.APP}/>
           <Card title="Web Site | Blockchain" link={Pages.WEBSITE}/>
-          <Card title="Scripts" link={Pages.SCRIPTS}/>
+          <Card title="Other" link={Pages.OTHER}/>
           <Card title="3D Model" link={Pages.MODEL3D}/>
           
           
