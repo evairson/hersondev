@@ -9,11 +9,11 @@ const Header = ({activeIndex}) => {
 
         <nav>
           <ul>
-            <li className={activeIndex === Pages.HOME ? "active" : ""} id="home"><a href={Pages.HOME} >Home</a></li>
+            <li className={activeIndex === Pages.HOME ? "active" : ""} id="home"><a href={Pages.HOME}>Home</a></li>
           </ul>
         </nav>
 
-        <nav>
+        <nav className='nav_right'>
           <ul>
             <li className={activeIndex === Pages.PROJECTS ? "active" : ""}><a href={Pages.PROJECTS}>My Projects</a></li>
             <li className={activeIndex === Pages.COMPETENCES ? "active" : ""}><a href={Pages.COMPETENCES}>Competences</a></li>

@@ -7,7 +7,7 @@ const Script = () => {
     return (
         <div className="App projects">
         <Header activeIndex={Pages.PROJECTS}/> 
-        <h1>Scripts</h1>
+        <h1>Other</h1>
 
         <div className="container">
 

@@ -10,6 +10,8 @@ header .container {
     text-transform: uppercase;
 }
 
+
+
 header .container ul {
     display: flex;
     align-items: center;
@@ -41,12 +43,16 @@ header li.active a {
     border-bottom: 1px solid var(--primary-color);
 }
 
+.only_mobile {
+    display: none;
+}
+
 
 
 @media screen and (max-width : 768px) {
 
-    header nav {
-        display  : none;
+    header .nav_right {
+        display : none;
     }
 
     header {
@@ -55,5 +61,16 @@ header li.active a {
         font-size: 2em;
         cursor: pointer;
     }
+
+    .only_mobile {
+        display: block;
+    }
+
+    header nav ul{
+        padding: 0;
+        margin-left: 2vw;
+    }
+
     
+
 }

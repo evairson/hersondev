@@ -35,3 +35,18 @@
     background-color: var(--primary-color);
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    #card {
+        width: 80vw;
+        font-size: 0.9rem;
+    }
+
+    #card:hover {
+        left: 0;
+    }
+    #card.reverse:hover {
+        left: 0;
+    }
+    
+}

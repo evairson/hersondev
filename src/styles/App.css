@@ -33,8 +33,7 @@ h1 {
 .content_text {
     margin-right: 5vw;
     margin-left : 3vw;
-    margin-top : 5vh;
-    
+    margin-top : 5vh; 
 }
 
 .first_text {
@@ -329,23 +328,85 @@ h1 {
 }
 
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
     body {
         font-size: 0.4rem;
+        text-align: center;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    .content_text {
+    .container .content_text {
         margin: 0;
     }
 
+    .container .content_img {
+        width: 30vw;
+        margin: 5vh 0;
+    }
 
+    .see_my_work {
+        display: none;
+    }
+
+    .content_text__buttons {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 0;
+        gap: 1rem; /* Espace entre les boutons */
+    }
+
+    .first_text {
+        animation: none;
+    }
+
+    .last_text {
+        animation: none;
+    }
+
+    .slide_top {
+        animation: none;
+    }
+
+
+    .me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
     
+    }
+
+    .contact_me {
+        display: flex;
+        margin: auto;
+    }
+
+    #projects {
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+
+    .button_fill {
+        font-size: 1.1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .flex {
+        justify-content: center;
+    }
+
+    .me h1 {
+        font-size: 1.6rem;
+    }
+
+
+
 }

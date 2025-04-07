@@ -26,7 +26,7 @@ const Home = () => {
                </div>
               </div>
               
-              <div>
+              <div className="contact_me">
               <a href="mailto:eva.herson.pro@gmail.com"
                className='button_fill'>CONTACT ME</a>
                </div>
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
         </Element>
 
-        <div id='projects'>
+        <div className='projects'>
 
         <h1>My Skills</h1>
 
