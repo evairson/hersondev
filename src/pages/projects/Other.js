@@ -33,6 +33,12 @@ const Script = () => {
 
         <Project title="Shell" img="shell"
             firstText="This is a school project where we had to create a simple shell in C."
+            secondText="This is the git repository of the project."
+            link="/https://github.com/Grimmins/fsh"
+        />
+
+        <Project title="Two-party computation" img="two_party"
+            firstText="This is a school project where we had to create some system to compute a function with two parties without revealing their inputs."
             secondText="The git repository will be available soon. "
             link="/"
         />

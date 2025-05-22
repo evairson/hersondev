@@ -11,17 +11,28 @@ const WebSite = () => {
 
         <div className="container">
 
-        <Project title = "Visual Space" img="visualspace" 
-          firstText="This is a client website that I remade with a new design and new features. I also improved the SEO and the speed of the website."
+        <Project title = "devstacker" img="devstacker"
+          firstText="This is a website that I made for a group of freelancers. I made the design and the development of the website."
           secondText="This is the link to the website :"
-          link='https://visualspace.eu'
-          
+          link='https://devstacker.fr'
+        />
+
+        <Project title = "Greenlock (blockchain)" img="greenlock"
+          firstText="Our team Greelock made a project that transforms land conservation by tokenizing Environmental protections as NFTs. We won the third price in the XRPL track at the Paris Blockchain Week Hackathon 2025."
+          secondText="Click here to see a demo"
+          link='https://youtu.be/e0_1su9Vn3c'
         />
 
         <Project title = "Brist (blockchain)" img="brist"
           firstText="Brist is a personal project realised during a hackathon. It uses the Ethereum blockchain to know the entries of workers in a construction site."
           secondText="Click here to see a demo"
           link='https://youtu.be/phc41l44FcY'
+        />
+
+        <Project title = "Visual Space" img="visualspace" 
+          firstText="This is a client website that I remade with a new design and new features. I also improved the SEO and the speed of the website."
+          secondText="This is the link to the website :"
+          link='https://visualspace.eu'
         />
 
         <Project title = "portfolio" img="hersondev"
@@ -42,11 +53,7 @@ const WebSite = () => {
           link='/guestbook'
         />
 
-        <Project title = "Greenlock (blockchain)" img="greenlock"
-          firstText="Our team Greelock made a project that transforms land conservation by tokenizing Environmental protections as NFTs. We won the third price in the XRPL track at the Paris Blockchain Week Hackathon 2025."
-          secondText="Click here to see a demo"
-          link='https://youtu.be/e0_1su9Vn3c'
-        />
+
 
 
         </div>
