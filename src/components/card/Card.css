@@ -2,21 +2,23 @@
 
 #card {
     position: relative;
-    left : 0;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: var(--primary-color);
-    color: black;
+    left: 0;
+    border-radius: 8px;
+    margin: 6px 5px;
+    padding: 0.7rem 1.2rem;
+    background-color: transparent;
+    color: var(--primary-color);
     border: 1px solid var(--primary-color);
     text-decoration: none;
     font-size: 1rem;
     width: 25vw;
     text-align: center;
-    background-color: transparent;
-    color: var(--primary-color);
-    transition: left 0.5s ease;
+    transition: left 0.5s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
+#card h2 {
+    margin: 0;
+}
 
 #card:hover {
     left: 5vw;
@@ -48,5 +50,4 @@
     #card.reverse:hover {
         left: 0;
     }
-    
 }

@@ -1,5 +1,8 @@
 import { ethers, BrowserProvider, parseEther, formatEther} from "ethers";
 import React, { useEffect, useState } from "react";
+import Header from "../../../components/header/Header";
+import PageHeader from "../../../components/PageHeader";
+import { Pages } from "../../../constants/constants";
 import './guestbook.css';
 
 const CONTRACT_ADDRESS = "0xF1c4f7CC01F9030d090F8F671063F19BEeE20B74";
@@ -123,8 +126,10 @@ export default function App() {
   
 
   return (
-    <div className="guestbook"> 
-      <h1 className="guestbookh1">Blockchain Guestbook</h1>
+    <div>
+    <Header activeIndex={Pages.PROJECTS}/>
+    <div className="page guestbook">
+      <PageHeader title="Blockchain Guestbook" subtitle="Leave a message stored on the Ethereum blockchain." />
       <div className="messages">
         {messages.map((msg, index) => (
           <div className="message" key={index}><div>
@@ -140,10 +145,10 @@ export default function App() {
             Leave Message</button>
         <p className="error">{error}</p>
         <p className="sending">{sending && "Sending message, this may take a few seconds... Please confirm the transaction in Metamask."}</p>
-        
+
       </form>
 
-     
+    </div>
     </div>
   );
 }

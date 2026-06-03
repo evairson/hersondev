@@ -1,15 +1,31 @@
 import { Pages } from "../../constants/constants";
 import Header from "../../components/header/Header";
 import Project from "../../components/project/Project";
+import PageHeader from "../../components/PageHeader";
 import '../../components/project/Project.css';
 
 const AppProject = () => {
   return (
     <div className="App projects">
-        <Header activeIndex={Pages.PROJECTS}/> 
-        <h1>Mobile App</h1>
+        <Header activeIndex={Pages.PROJECTS}/>
+        <PageHeader title="Mobile App" />
 
         <div className="container">
+
+
+        <Project title = "BoostIn" img="boostin"
+            firstText="BoostIn is an application for students and entrepreneurs who want to be help with their project. It's a community of people who want to help each other. I am the cofounder of the project with Enzo Sakhinis."
+            secondText="The app is available on IOS and Android."
+            link={"https://boostin.fr"}
+            phone={true}
+        />
+
+        <Project title = "Telenews" img="telenews"
+            firstText="Telenews is an application for Telecom Paris students to see all of the information about the information of associative life. This is an opensource project"
+            secondText="The app is available on IOS and Android."
+            link={"https://telenews.bde-telecom-paris.fr"}
+            phone={true}
+        />
 
         <Project title = "HubStep" img="hubstep" 
           firstText="This is a personal project available on IOS. In this app you can find some place to dance or listen to music." 
@@ -33,6 +49,7 @@ const AppProject = () => {
             
             phone={true}
         />
+
 
         </div>
 

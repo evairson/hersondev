@@ -1,24 +1,26 @@
 import { Pages } from "../constants/constants";
 import Header from "../components/header/Header";
 import AboutInfo from "../components/AboutInfo";
+import PageHeader from "../components/PageHeader";
 
 const About = () => {
   return (
     <div className="about">
-      <Header activeIndex={Pages.ABOUT}/> 
-      <h1>About Me</h1>
-      <div className="container">
+      <Header activeIndex={Pages.ABOUT}/>
+      <div className="page">
+      <PageHeader title="About Me" />
+      <div className="container panel about_intro">
           <img src="ressources/picture_eva.JPG" alt="" className="profil_img"/>
           <div className="about_text">
               <p>
-                  Hi, my name is Eva, and I’m pursuing a dual degree in Mathematics and Computer Science. My passion for technology and programming began when I was just 8 years old.
+                  Hi, my name is Eva, and I’m an engineering student at Télécom Paris. My passion for technology and programming began when I was just 8 years old.
               </p>
               <p>
               I have gained several skills thanks to my courses, as well as my personal experience, whether through internships, competitions, projects, or self-learning
               </p>
           </div>
       </div>
-      <div className="container about_info_container">
+      <div className="about_info_container">
           
             <AboutInfo icon="mobile">
                 <p>In 2023, I started developing mobile applications using Swift.</p>
@@ -41,8 +43,9 @@ const About = () => {
                 <p>Aside from that, I’ve also worked with Python, Java, and C on school projects.</p>
                 <p>I’m really interested in cybersecurity too. I’ve learned a lot from courses and spent time solving challenges on Root-Me.</p>
                 <a href="https://www.root-me.org/herson?lang=fr" target="_blank" rel="noreferrer">Check out my Root-Me profile here!</a>
-            </AboutInfo>    
+            </AboutInfo>
       </div>
+  </div>
   </div>
   );
 }

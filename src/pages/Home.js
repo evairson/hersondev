@@ -40,40 +40,32 @@ const Home = () => {
          
         </div>
 
-        <div className="container me">
+        <Element name="projects" className="home_sections">
 
-        
-        <Element id='projects' name="projects">
-        <h1>My Projects</h1>
+          <section className="panel home_section">
+            <h2 className="home_section__title">My Projects</h2>
+            <div className="home_section__cards">
+              <Card title="Game" link={Pages.GAME}/>
+              <Card title="Mobile App" link={Pages.APP}/>
+              <Card title="Web Site" link={Pages.WEBSITE}/>
+              <Card title="Blockchain" link={Pages.BLOCKCHAIN}/>
+              <Card title="Other" link={Pages.OTHER}/>
+            </div>
+          </section>
 
+          <section className="panel home_section">
+            <h2 className="home_section__title">My Skills</h2>
+            <div className="home_section__cards">
+              <Card title="Web Site" link={`${Pages.COMPETENCES}#web`}/>
+              <Card title="Mobile App" link={`${Pages.COMPETENCES}#mobile`}/>
+              <Card title="Blockchain" link={`${Pages.COMPETENCES}#blockchain`}/>
+              <Card title="Programming" link={`${Pages.COMPETENCES}#programming`}/>
+              <Card title="Data & AI" link={`${Pages.COMPETENCES}#data`}/>
+              <Card title="Game" link={`${Pages.COMPETENCES}#game`}/>
+            </div>
+          </section>
 
-        <div className="card_container">
-          <Card title="Game" link={Pages.GAME}/>
-          <Card title="Mobile App" link={Pages.APP}/>
-          <Card title="Web Site | Blockchain" link={Pages.WEBSITE}/>
-          <Card title="Other" link={Pages.OTHER}/>
-          <Card title="3D Model" link={Pages.MODEL3D}/>
-          
-          
-        </div>
         </Element>
-
-        <div className='projects'>
-
-        <h1>My Skills</h1>
-
-        <div className="card_container">
-          <Card title="Game" link={`${Pages.COMPETENCES}#other`} reverse={true}/>
-          <Card title="Mobile App" link={`${Pages.COMPETENCES}#mobile`} reverse={true}/>
-          <Card title="Web Site" link={`${Pages.COMPETENCES}#web`} reverse={true} />
-          <Card title="Blockchain" link={`${Pages.COMPETENCES}#blockchain`} reverse={true}/>
-          <Card title="Other skills" link={`${Pages.COMPETENCES}#other`} reverse={true}/>
-          
-        </div>
-        </div>
-        
-
-        </div>
     </div>
         
   )

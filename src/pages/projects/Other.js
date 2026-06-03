@@ -1,13 +1,14 @@
 import { Pages } from "../../constants/constants";
 import Header from "../../components/header/Header";
 import Project from "../../components/project/Project";
+import PageHeader from "../../components/PageHeader";
 import '../../components/project/Project.css';
 
 const Script = () => {
     return (
         <div className="App projects">
-        <Header activeIndex={Pages.PROJECTS}/> 
-        <h1>Other</h1>
+        <Header activeIndex={Pages.PROJECTS}/>
+        <PageHeader title="Other" />
 
         <div className="container">
 

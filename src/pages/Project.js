@@ -1,25 +1,23 @@
 import { Pages } from "../constants/constants";
 import Header from "../components/header/Header";
 import Card from "../components/card/Card";
+import PageHeader from "../components/PageHeader";
 
 
 const Project = () => {
   return (
     <div>
-    <Header activeIndex={Pages.PROJECTS}/> 
-    <div id='projects' name="projects" className="project_page">
-    <h1>My Projects</h1>
+    <Header activeIndex={Pages.PROJECTS}/>
+    <div className="page">
+      <PageHeader title="My Projects" subtitle="Pick a category to explore my work." />
 
-
-    <div className="card_container">
-      <Card title="Game" link={Pages.GAME} stop={true}/>
-      <Card title="Mobile App" link={Pages.APP} stop={true}/>
-      <Card title="Web Site | Blockchain" link={Pages.WEBSITE} stop={true}/>
-      <Card title="Other" link={Pages.OTHER} stop={true}/>
-      <Card title="3D Model" link={Pages.MODEL3D} stop={true}/>
-      
-      
-    </div>
+      <div className="nav_card_list">
+        <Card title="Game" link={Pages.GAME} stop={true}/>
+        <Card title="Mobile App" link={Pages.APP} stop={true}/>
+        <Card title="Web Site" link={Pages.WEBSITE} stop={true}/>
+        <Card title="Blockchain" link={Pages.BLOCKCHAIN} stop={true}/>
+        <Card title="Other" link={Pages.OTHER} stop={true}/>
+      </div>
     </div>
     </div>
   );
