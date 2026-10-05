@@ -1,6 +1,7 @@
 import CompetencesInfo from "../components/CompetencesInfo";
 import Header from "../components/header/Header";
 import PageHeader from "../components/PageHeader";
+import Footer from "../components/footer/Footer";
 import { Pages } from "../constants/constants";
 
 const skills = [
@@ -9,8 +10,9 @@ const skills = [
         icon: "website",
         title: "Web Development",
         groups: [
-            { label: "Frontend", items: ["HTML", "CSS", "ReactJS", "TailwindCSS", "Wordpress", "PHP"] },
-            { label: "Backend", items: ["Javascript", "Firebase", "Flask", "PHP"] },
+            { label: "Frontend", items: ["HTML", "CSS", "React", "Next.js", "TailwindCSS", "Three.js", "Vite", "WordPress"] },
+            { label: "Backend", items: ["JavaScript", "TypeScript", "NestJS", "Prisma", "Flask", "PHP", "Firebase"] },
+            { label: "Other", items: ["Docker", "OAuth2 / OIDC", "SEO"] },
         ],
     },
     {
@@ -18,9 +20,9 @@ const skills = [
         icon: "mobile",
         title: "Mobile Development",
         groups: [
+            { label: "iOS", items: ["Swift", "SwiftUI"] },
             { label: "Android", items: ["Java", "Kotlin"] },
-            { label: "iOS", items: ["Swift"] },
-            { label: "Cross-platform", items: ["React Native", "Flutter"] },
+            { label: "Cross-platform", items: ["Flutter", "React Native"] },
         ],
     },
     {
@@ -28,8 +30,18 @@ const skills = [
         icon: "blockchain",
         title: "Blockchain",
         groups: [
-            { label: "Blockchain", items: ["Ethereum", "XRPL", "Polkadot"] },
-            { label: "Smart Contract", items: ["Solidity", "Rust"] },
+            { label: "Blockchain", items: ["Ethereum", "Base", "XRPL", "Polkadot"] },
+            { label: "Smart Contract", items: ["Solidity", "Rust", "Hardhat", "ethers.js"] },
+            { label: "Security", items: ["Slither", "Ledger DMK"] },
+        ],
+    },
+    {
+        id: "legacy",
+        icon: "programming",
+        title: "Legacy & Mainframe",
+        groups: [
+            { label: "Ecosystem", items: ["COBOL", "JCL", "Copybooks", "DB2", "CICS"] },
+            { label: "Analysis", items: ["Static parsing", "Dependency graphs", "Variable tracing"] },
         ],
     },
     {
@@ -37,7 +49,8 @@ const skills = [
         icon: "programming",
         title: "Programming",
         groups: [
-            { label: "Languages", items: ["Python", "Java", "C"] },
+            { label: "Languages", items: ["Python", "TypeScript", "Java", "C", "OCaml", "Dart"] },
+            { label: "Security", items: ["Web security", "Cryptography", "CTF challenges"] },
         ],
     },
     {
@@ -45,8 +58,8 @@ const skills = [
         icon: "programming",
         title: "Data & AI",
         groups: [
-            { label: "Data", items: ["MySQL", "Firebase", "Pandas", "Numpy"] },
-            { label: "AI", items: ["Tensorflow", "Keras"] },
+            { label: "Data", items: ["PostgreSQL", "MySQL", "Firebase", "Pandas", "NumPy"] },
+            { label: "AI", items: ["TensorFlow", "Keras"] },
         ],
     },
     {
@@ -55,7 +68,7 @@ const skills = [
         title: "Game Development",
         groups: [
             { label: "Engines", items: ["Construct", "Unity"] },
-            { label: "Languages", items: ["Java"] },
+            { label: "Languages", items: ["Java", "OCaml"] },
         ],
     },
 ];
@@ -80,6 +93,7 @@ const Competences = () => {
                     ))}
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

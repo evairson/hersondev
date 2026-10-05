@@ -2,16 +2,12 @@ import './styles/App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Pages } from './constants/constants';
 import Home from './pages/Home';
-import Game from './pages/projects/Game';
-import AppProject from './pages/projects/AppProject';
 import ScrollToTop from './components/ScrollTop';
-import WebSite from './pages/projects/WebSite';
-import Blockchain from './pages/projects/Blockchain';
 import Project from './pages/Project';
+import CategoryPage from './pages/projects/CategoryPage';
 import GuestBook from './pages/blockchain/guestbook/GuestBook';
 import About from './pages/About';
 import Competences from './pages/Competences';
-import Script from './pages/projects/Other';
 
 const App = () => {
   /*const [isMobile, setIsMobile] =  useState(false);
@@ -59,15 +55,15 @@ const App = () => {
       <ScrollToTop />
       <Routes>
         <Route path={Pages.HOME} element={<Home />} />
-        <Route path={Pages.GAME} element={<Game />} />
-        <Route path={Pages.APP} element={<AppProject />} />
-        <Route path={Pages.WEBSITE} element={<WebSite />} />
-        <Route path={Pages.BLOCKCHAIN} element={<Blockchain />} />
+        <Route path={Pages.GAME} element={<CategoryPage id="game" />} />
+        <Route path={Pages.APP} element={<CategoryPage id="app" />} />
+        <Route path={Pages.WEBSITE} element={<CategoryPage id="website" />} />
+        <Route path={Pages.BLOCKCHAIN} element={<CategoryPage id="blockchain" />} />
         <Route path={Pages.PROJECTS} element={<Project />} />
         <Route path={Pages.GUESTBOOK} element={<GuestBook />} />
         <Route path={Pages.ABOUT} element={<About />} />
         <Route path={Pages.COMPETENCES} element={<Competences />} />
-        <Route path={Pages.OTHER} element={<Script />} />
+        <Route path={Pages.OTHER} element={<CategoryPage id="other" />} />
       </Routes>
     </Router>
   );

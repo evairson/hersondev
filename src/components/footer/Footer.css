@@ -1,0 +1,57 @@
+@import '../../styles/variables.css';
+
+.footer {
+    border-top: 1px solid var(--card-border);
+    background: rgba(10, 10, 12, 0.6);
+    padding: 3rem 5vw 2rem;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer__title {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer__mail {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.footer__mail:hover {
+    text-decoration: underline;
+}
+
+.footer__links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer__links a {
+    color: var(--text-soft);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer__links a:hover {
+    color: var(--primary-color);
+}
+
+.footer__copy {
+    max-width: 1100px;
+    margin: 2.5rem auto 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: left;
+}

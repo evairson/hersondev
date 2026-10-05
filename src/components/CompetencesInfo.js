@@ -5,7 +5,7 @@ const CompetencesInfo = ({ id, icon, title, groups }) => {
         <div className="panel panel--interactive skill_card" id={id}>
             <div className="skill_card__header">
                 <div className="skill_card__icon">
-                    <img src={`ressources/icons/${icon}.png`} alt="" />
+                    <img src={`/ressources/icons/${icon}.png`} alt="" />
                 </div>
                 <h2>{title}</h2>
             </div>

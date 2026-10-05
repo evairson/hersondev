@@ -1,110 +1,158 @@
 @import '../../styles/variables.css';
 
-/* Project category page wrapper.
-   Stays full-width so the sticky Header spans the whole viewport,
-   exactly like every other page. */
-.projects {
-    min-height: 100vh;
-    padding-bottom: 12vh;
-    text-align: center;
-}
-
-/* Responsive grid — 3 projects per row. Width is constrained here
-   (not on .projects) so it matches the shared .page widget.
-   Direct child only, so the Header's own .container is not affected. */
-.projects > .container {
+.project_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 5vw;
 }
 
 .project {
-    position: relative;
-    height: 240px;
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     border: 1px solid var(--card-border);
-    background-color: var(--panel-bg);
-    text-decoration: none;
-    overflow: hidden;
-    transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.project:hover {
-    transform: translateY(-4px);
-    border-color: var(--primary-color);
-}
-
-.phone {
-    height: 380px;
-}
-
-.project h1 {
-    position: relative;
-    z-index: 2;
-    margin: 0;
-    padding: 0.9rem 1.1rem;
-    font-size: 1.2rem;
-    text-align: left;
+    background: var(--panel-bg);
     color: white;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.88));
-    transition: opacity 0.35s ease;
+    text-decoration: none;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeup 0.6s ease both;
 }
 
-.project:hover h1 {
-    opacity: 0;
+.project--link:hover {
+    transform: translateY(-4px);
+    border-color: var(--card-border-hover);
+    box-shadow: 0 12px 40px -12px var(--primary-glow);
 }
 
-.project .overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    margin: 0;
+/* Screenshot area */
+.project__media {
+    box-sizing: border-box;
+    height: 190px;
+    background-color: rgba(0, 0, 0, 0.35);
+    background-size: cover;
+    background-position: center top;
+    border-bottom: 1px solid var(--card-border);
+    transition: background-size 0.4s ease;
+}
+
+/* Tall phone screenshots: show the whole screen instead of cropping it */
+.project__media--phone {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project__media--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: radial-gradient(circle at 30% 20%, var(--primary-glow), transparent 65%), rgba(0, 0, 0, 0.25);
+}
+
+.project__media--empty span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.project__body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 0.7rem;
-    padding: 1.5rem;
-    text-align: left;
-    background: rgba(10, 10, 12, 0.88);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.35s ease;
+    gap: 0.8rem;
+    flex: 1;
+    padding: 1.2rem 1.3rem 1.3rem;
 }
 
-.project:hover .overlay {
-    opacity: 1;
+.project__heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
 }
 
-.project p {
+.project__heading h3 {
     margin: 0;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.project .overlay p:last-child {
+.project__year {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.project__description {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-soft);
+}
+
+.project__tags .skill_pill {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+}
+
+.project__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.project__note {
+    color: var(--text-muted);
+}
+
+.project__cta {
+    margin-left: auto;
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
-@media screen and (max-width: 1024px) {
-    .projects > .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.project__cta span {
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+.project--link:hover .project__cta span {
+    transform: translateX(4px);
 }
 
 @media screen and (max-width: 768px) {
-    .projects > .container {
+    .project_grid {
         grid-template-columns: 1fr;
     }
+}
 
-    .project,
-    .phone {
-        height: 300px;
-    }
+.project__media {
+    position: relative;
+}
+
+.project__logo {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project__logo--center {
+    position: static;
+    width: auto;
+    height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+    box-shadow: none;
+    border-radius: 0;
 }

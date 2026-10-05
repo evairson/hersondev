@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Card.css';
 
-const Card = ({ title, link, reverse, stop}) => {
+const Card = ({ title, link, reverse, stop, count }) => {
 
   return (
     <Link to={link} id='card' className={`${reverse ? "reverse" : ""} ${stop ? "stop" : ""}`}>
       <h2>{title}</h2>
-      </Link>
+      {count !== undefined && <span className="card__count">{count}</span>}
+    </Link>
   );
 }
 
