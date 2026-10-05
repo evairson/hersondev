@@ -22,11 +22,11 @@ const Home = () => {
 
         <div className="container hero">
           <div className="content_text">
-            <span className="hero_badge"><span className="hero_badge__dot" /> Engineering student at Télécom Paris</span>
+            <span className="hero_badge"><span className="hero_badge__dot" /> Co-founder of Nestra</span>
             <div className='flex'> <h1 className='first_text'> Hi ! </h1> <div className='overflow_hidden'><h1 className='last_text'>My name is Eva</h1></div> </div>
-            <div className='overflow_hidden'><h1 className='slide_top'>I’m a <color> Full Stack Developer </color> </h1></div> 
+            <div className='overflow_hidden'><h1 className='slide_top'>I’m an <color>Engineering Student</color></h1></div> 
 
-            <p>I build mobile apps, websites and blockchain projects, from hackathons to apps used by my whole school, and I’m co-founding Nestra. Welcome to my portfolio!</p>
+            <p>I study at Télécom Paris, I’m the co-founder of Nestra and I love hackathons. I build mobile apps, websites and blockchain projects.</p>
             <div className="content_text__buttons">
               <div className='see_my_work'>
                <ScrollLink to="projects" className='button_outline' smooth={true} offset={-80}
